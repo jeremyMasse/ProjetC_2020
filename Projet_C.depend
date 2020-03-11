@@ -1,0 +1,462 @@
+# depslib dependency file v1.0
+1582705942 source:c:\users\jerem\onedrive\bureau\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583451988 source:c:\users\jerem\documents\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inventaire.h"
+	"fichier.h"
+
+1583525666 source:c:\users\jerem\documents\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1582711525 c:\users\jerem\documents\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inventaire.h"
+
+1583260029 c:\users\jerem\documents\projet_c\inventaire.h
+
+1583452062 c:\users\jerem\documents\projet_c\fichier.h
+	"fichier.c"
+
+1583452333 c:\users\jerem\documents\projet_c\fichier.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583752795 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583614778 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\a_propos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583884977 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"plateau.h"
+
+1583884650 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<fcntl.h>
+	<unistd.h>
+	<windows.h>
+	"sorts.h"
+	"monstres.h"
+	"joueur.h"
+	"plateau.h"
+	"combat.h"
+	"menu.h"
+
+1583883420 c:\users\jerem\desktop\projetcsd\caca\projet_c\menu.h
+	"structures.h"
+
+1583753716 c:\users\jerem\desktop\projetcsd\caca\projet_c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+
+1583846114 c:\users\jerem\desktop\projetcsd\caca\projet_c\sorts.h
+	"structures.h"
+
+1583768784 c:\users\jerem\desktop\projetcsd\caca\projet_c\sorts.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583881002 c:\users\jerem\desktop\projetcsd\caca\projet_c\monstres.h
+	"structures.h"
+
+1583761277 c:\users\jerem\desktop\projetcsd\caca\projet_c\monstres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583880949 c:\users\jerem\desktop\projetcsd\caca\projet_c\joueur.h
+	"structures.h"
+
+1583769371 c:\users\jerem\desktop\projetcsd\caca\projet_c\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583752830 c:\users\jerem\desktop\projetcsd\caca\projet_c\inventaire.h
+	"inventaire.c"
+
+1583752795 c:\users\jerem\desktop\projetcsd\caca\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583878309 c:\users\jerem\desktop\projetcsd\caca\projet_c\plateau.h
+	"structures.h"
+
+1583773133 c:\users\jerem\desktop\projetcsd\caca\projet_c\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	"joueur.h"
+
+1583775524 c:\users\jerem\desktop\projetcsd\caca\projet_c\fichier.h
+
+1583773905 c:\users\jerem\desktop\projetcsd\caca\projet_c\fichier.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<fcntl.h>
+	<unistd.h>
+	"fichier.h"
+
+1583844853 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\monstres.h
+	"sorts.h"
+
+1583844719 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\sorts.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sorts.h"
+
+1583881026 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\monstres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"monstres.h"
+
+1583880325 c:\users\jerem\desktop\projetcsd\caca\projet_c\structures.h
+
+1583884806 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"joueur.h"
+	"plateau.h"
+
+1583871535 c:\users\jerem\desktop\projetcsd\caca\projet_c\combat.h
+	"structures.h"
+
+1583881098 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+	<windows.h>
+	"combat.h"
+	"structures.h"
+	"plateau.h"
+
+1583885008 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"menu.h"
+
+1583876946 source:c:\users\jerem\desktop\projetcsd\caca\projet_c\coffre.c
+
+1583925856 source:d:\users\elau\documents\projet_c\a_propos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583876946 source:d:\users\elau\documents\projet_c\coffre.c
+
+1583925659 source:d:\users\elau\documents\projet_c\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+	<windows.h>
+	"combat.h"
+	"structures.h"
+	"plateau.h"
+
+1583922246 d:\users\elau\documents\projet_c\combat.h
+	"structures.h"
+
+1583923238 d:\users\elau\documents\projet_c\structures.h
+
+1583925393 d:\users\elau\documents\projet_c\plateau.h
+	"structures.h"
+
+1583752795 source:d:\users\elau\documents\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583925762 source:d:\users\elau\documents\projet_c\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"joueur.h"
+	"plateau.h"
+
+1583925220 d:\users\elau\documents\projet_c\joueur.h
+	"structures.h"
+
+1583922289 source:d:\users\elau\documents\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<fcntl.h>
+	<unistd.h>
+	<windows.h>
+	"sorts.h"
+	"monstres.h"
+	"joueur.h"
+	"plateau.h"
+	"combat.h"
+	"menu.h"
+
+1583846114 d:\users\elau\documents\projet_c\sorts.h
+	"structures.h"
+
+1583881002 d:\users\elau\documents\projet_c\monstres.h
+	"structures.h"
+
+1583883420 d:\users\elau\documents\projet_c\menu.h
+	"structures.h"
+
+1583885008 source:d:\users\elau\documents\projet_c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"menu.h"
+
+1583881026 source:d:\users\elau\documents\projet_c\monstres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"monstres.h"
+
+1583925432 source:d:\users\elau\documents\projet_c\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"plateau.h"
+
+1583844719 source:d:\users\elau\documents\projet_c\sorts.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sorts.h"
+
+1583968832 source:c:\users\jerem\desktop\projetcsd\projet_c\a_propos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583968182 source:c:\users\jerem\desktop\projetcsd\projet_c\coffre.c
+
+1583968382 source:c:\users\jerem\desktop\projetcsd\projet_c\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+	<windows.h>
+	"combat.h"
+	"structures.h"
+	"plateau.h"
+
+1583922246 c:\users\jerem\desktop\projetcsd\projet_c\combat.h
+	"structures.h"
+
+1583968788 c:\users\jerem\desktop\projetcsd\projet_c\structures.h
+
+1583968774 c:\users\jerem\desktop\projetcsd\projet_c\plateau.h
+	"structures.h"
+
+1583968488 source:c:\users\jerem\desktop\projetcsd\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<fcntl.h>
+	<unistd.h>
+	<windows.h>
+	"sorts.h"
+	"monstres.h"
+	"joueur.h"
+	"plateau.h"
+	"combat.h"
+	"menu.h"
+	"inventaire.h"
+
+1583846114 c:\users\jerem\desktop\projetcsd\projet_c\sorts.h
+	"structures.h"
+
+1583881002 c:\users\jerem\desktop\projetcsd\projet_c\monstres.h
+	"structures.h"
+
+1583949103 c:\users\jerem\desktop\projetcsd\projet_c\joueur.h
+	"structures.h"
+
+1583968853 c:\users\jerem\desktop\projetcsd\projet_c\menu.h
+	"structures.h"
+
+1583885008 source:c:\users\jerem\desktop\projetcsd\projet_c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"menu.h"
+
+1583955716 source:c:\users\jerem\desktop\projetcsd\projet_c\monstres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"monstres.h"
+
+1583968586 source:c:\users\jerem\desktop\projetcsd\projet_c\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"plateau.h"
+
+1583968618 source:c:\users\jerem\desktop\projetcsd\projet_c\sorts.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sorts.h"
+
+1583968700 source:c:\users\jerem\desktop\projetcsd\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inventaire.h"
+
+1583949150 c:\users\jerem\desktop\projetcsd\projet_c\inventaire.h
+	"structures.h"
+
+1583968019 source:c:\users\jerem\desktop\projetcsd\projet_c\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"joueur.h"
+	"plateau.h"
+
+1583968832 source:c:\users\jerem\desktop\projet_c\a_propos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1583968182 source:c:\users\jerem\desktop\projet_c\coffre.c
+
+1583969724 source:c:\users\jerem\desktop\projet_c\combat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+	<windows.h>
+	"combat.h"
+	"structures.h"
+	"plateau.h"
+
+1583922246 c:\users\jerem\desktop\projet_c\combat.h
+	"structures.h"
+
+1583968788 c:\users\jerem\desktop\projet_c\structures.h
+
+1583968774 c:\users\jerem\desktop\projet_c\plateau.h
+	"structures.h"
+
+1583968700 source:c:\users\jerem\desktop\projet_c\inventaire.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inventaire.h"
+
+1583949150 c:\users\jerem\desktop\projet_c\inventaire.h
+	"structures.h"
+
+1583968019 source:c:\users\jerem\desktop\projet_c\joueur.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"joueur.h"
+	"plateau.h"
+
+1583949103 c:\users\jerem\desktop\projet_c\joueur.h
+	"structures.h"
+
+1583969638 source:c:\users\jerem\desktop\projet_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<fcntl.h>
+	<unistd.h>
+	<windows.h>
+	"sorts.h"
+	"monstres.h"
+	"joueur.h"
+	"plateau.h"
+	"combat.h"
+	"menu.h"
+	"inventaire.h"
+
+1583846114 c:\users\jerem\desktop\projet_c\sorts.h
+	"structures.h"
+
+1583881002 c:\users\jerem\desktop\projet_c\monstres.h
+	"structures.h"
+
+1583968853 c:\users\jerem\desktop\projet_c\menu.h
+	"structures.h"
+
+1583955716 source:c:\users\jerem\desktop\projet_c\monstres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"monstres.h"
+
+1583969479 source:c:\users\jerem\desktop\projet_c\plateau.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"plateau.h"
+
+1583968618 source:c:\users\jerem\desktop\projet_c\sorts.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sorts.h"
+
+1583969404 source:c:\users\jerem\desktop\projet_c\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"menu.h"
+

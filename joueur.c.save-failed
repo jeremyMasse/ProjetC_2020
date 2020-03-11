@@ -1,0 +1,157 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Joueur_s {
+    char *nom;
+    int vie;
+    int attaque;
+    int xp;
+    int niveau;
+    struct Sorts_s *sort;
+    struct Item_s *inventaire;
+    struct COORD_s *coord;
+}Joueur_t;
+
+typedef struct COORD_s{
+    int x;
+    int y;
+}COORD_t;
+
+typedef struct Item_s {
+    char *nom_item;
+    int nbr;
+    struct Item_s *next_item;
+    struct Item_s *previous_item;
+    struct Item_s *head;
+    struct Item_s *end;
+}Item_t;
+
+Item_t *initialisation_I(void)
+{
+    Item_t *inventaire = malloc(sizeof(Item_t));
+    if (inventaire == NULL)return NULL;
+    inventaire->nom_item = "epee";
+    inventaire->nbr = 1;
+    inventaire->next_item = NULL;
+    inventaire->previous_item = NULL;
+    inventaire->head = inventaire;
+    inventaire->end = inventaire;
+    return inventaire;
+}
+
+void print_inv(Item_t *inventaire)
+{
+    inventaire = inventaire->head;
+    while (inventaire != NULL){
+        printf("Dans l'inventaire il y a : %s", inventaire->nom_item);
+        printf("%d\n", inventaire->nbr);
+        inventaire = inventaire->next_item;
+    }
+}
+int count_item(Item_t *inventaire)
+{
+    int counter = 0;
+    inventaire = inventaire->head;
+    while(inventaire != NULL){
+        counter = counter + 1;
+        inventaire = inventaire->next_item;
+    }
+    return counter;
+}
+Item_t *add_item(Item_t *inventaire, char *nom_item)
+{
+
+    for (Item_t *i = inventaire->head; i != NULL; i = i->next_item){
+        if((strcmp(nom_item, i->nom_item)) == 0){
+           i->nbr = i->nbr + 1;
+           return inventaire;
+        }}
+    inventaire->end->next_item = malloc(sizeof(Item_t));
+    if (inventaire->end->next_item == NULL) return NULL;
+    inventaire->end->next_item->nom_item = nom_item;
+    inventaire->end->next_item->nbr = 1;
+    inventaire->end->next_item->next_item = NULL;
+    inventaire->end->next_item->head = inventaire->head;
+    inventaire->end->next_item->previous_item = inventaire->end;
+    inventaire->end = inventaire->end->next_item;
+
+    for (Item_t *i = inventaire->head; i != NULL; i = i->next_item){
+        i->end = inventaire->end;
+    }
+    count_item(inventaire);
+    return inventaire;
+}
+Item_t *del_item(Item_t *inventaire, char *nom)
+{
+    inventaire = inventaire->head;
+    while(inventaire != NULL && strcmp(inventaire->nom_item, nom) != 0){
+        inventaire = inventaire->next_item;
+    }
+    if (inventaire->nbr > 1){
+        inventaire->nbr = inventaire->nbr - 1;
+        return inventaire->head;
+    }
+    Item_t *tmp = inventaire;
+    if ((count_item(inventaire)) == 1){
+        inventaire->nom_item = "vide";
+        inventaire->nbr = 0;
+        return inventaire;
+    }
+    if (inventaire->previous_item != NULL && inventaire->next_item != NULL){
+        inventaire->next_item->previous_item = inventaire->previous_item;
+        inventaire->previous_item->next_item = inventaire->next_item;
+        free(tmp);
+        *inventaire = *inventaire->head;
+    }
+    else if (inventaire->previous_item == NULL ){
+        inventaire->next_item->previous_item = NULL;
+        for (Item_t *i = inventaire->end; i != NULL; i = i->previous_item){
+            i->head = inventaire->next_item;
+            //printf("\n%s",i->nom_item);
+            //printf("%s\n",inventaire->next_item->nom_item);
+        }
+        *inventaire = *inventaire->end;
+        }
+    else if (inventaire->next_item == NULL){
+
+            inventaire->previous_item->next_item = NULL;
+        for (Item_t *i = inventaire->head; i != NULL; i = i->next_item){
+            i->end = inventaire->previous_item;
+            //printf("\n%s",i->nom_item);
+            //printf("%s\n",inventaire->previous_item->nom_item);
+        }
+        *inventaire = *inventaire->head;
+        }
+    printf("\n");
+    printf("%d", count_item(inventaire));
+    print_inv(inventaire);
+    printf("\n");
+    return inventaire;
+}
+
+Joueur_t *initialisation_J(char *nom, Sort_t *sort)
+{
+    Joueur_t *joueur = malloc(sizeof(Joueur_t));
+    if (joueur == NULL)
+        return NULL;
+    joueur->nom = nom;
+    joueur->vie = 100;
+    joueur->attaque = 35;
+    joueur->xp = 0;
+    joueur->niveau = 1;
+    for(Sort_t *i = sort->head; i != NULL; i = i->next){
+        if (i->next == NULL)
+            joueur->sort = i;
+    }
+    Item_t *inventaire = initialisation_I();
+    if (inventaire == NULL) return NULL;
+    joueur->inventaire = inventaire;
+
+    joueur->coord = malloc(sizeof(COORD_t));
+    if (joueur->coord == NULL)
+        return NULL;
+    joueur->coord->x = 0;
+    joueur->coord->y = 0;
+    return joueur;
+}
